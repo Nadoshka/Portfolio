@@ -5,41 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Web Developer</title>
+    <script src="https://kit.fontawesome.com/7f370db103.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link href="./style.css" rel="stylesheet">  
 </head>
-<body>
-    <header>
-        <h1>Portfolio</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About me</li>
-                <li>service</li>
-            </ul>
-            <button class="btn btn--orange btn--radius" >Contact us</button>
+<body class="margin-xl">
+        <header>
+            <nav class="nav-bar">
+                <h1 class="nav-bar__header">Portfolio</h1>
+                <div class="nav__menu">
+                    <input type="checkbox" id="checkbox-menu" class="menu__checkbox">
+                    <label for="checkbox-menu" class="menu__label">
+                        <div class="menu__btn">
+                            <div class="menu__burger"></div>
+                        </div>
+                    </label>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#section">Home</a></li>
+                        <li class="menu__item"><a href="#services">About me</a></li>
+                        <li class="menu__item"><a href="#galery">services</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn--primary">Contact us</button>
             </nav>
-    </header>
-    <main>
-        <section class="section">
-            <h2 class="section__heading">Hi! I am </h2>
-            <h3 class="section__sub-heading">Nadin Atik</h3>
-            <p class="section__content">Full stack web developer <br> I am initiative, ambitious, responsible, I love to work in teams. I learned web development through an intensive six months Bootcamp, before that, I worked in HR which helped me learn more about working
-                with teams, develop more communication skills in conflict cases, and improve my problem-solving skills. I seek to achieve concrete goals in my job and always like to improve my skills.
-                I am looking to find a job where I can develop myself.</br></p>
-            <button class="btn">Hire Me</button>
-        </section>   
-            
-        <lable class="award">
-            <icon class="award__icon"></icon>
-            <h4 class="award__title">FE developer</h4>
-            <p class="award__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero reprehenderit cum sunt repudiandae error praesentium pariatur, iste dolore quos laborum commodi illo blanditiis sed non ut at ratione quisquam!</p>
-        </lable>
-        <icon></icon>
-        <img src="./nadin.jpg" alt="personal image">
+        </header>
+        <main>
+            <article class="margin-top-xxl introduction">
+                <section id="section" class="section margin-top-xxl">
+                    <h2 class="section__heading">Hey! I am </h2>
+                    <h3 class="section__sub-heading">Nadin Atik</h3>
+                    <p class="section__content"> I am initiative, ambitious, I love to work in teams. I learned web development through an intensive six months Bootcamp, before that, I worked in HR which helped me learn more about working
+                        with teams, develop more communication skills in conflict cases, and improve my problem-solving skills. I seek to achieve concrete goals in my job and always like to improve my skills.
+                        I am looking to find a job where I can develop myself.</br></p>
+                    <button class="btn btn--primary">Hire Me</button>
+                </section> 
 
-        <section>
-            
-        </section>
+                <section class="profile">
+                    <div class="profile-container margin-md">
+                        <img class="profile-container__image" src="images/nadin.jpg"/>
+                        <div class="profile-container__background"></div>
+                        <div class="profile-container__icon"></div>
+                        <div class="profile-container__icon  profile-container__icon--left"></div>
+                    </div>
+                    <div class="awards">
+                        <div class="award">
+                            <i class="award__icon fas fa-award"></i>
+                            <div class="award-content">
+                                <h3 class="award__title">Front-end</h3>
+                                <p class="award__paragraph"> Developer</p>
+                            </div>
+                        </div>
+    
+                        <div class="award">
+                            <i class="award__icon fas fa-award"></i>
+                            <div class="award-content">
+                                <h3 class="award__title">Javascript</h3>
+                                <p class="award__paragraph"> Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
 
-    </main>
-</body>
+            <article id="services" class="services margin-top-xxl">
+                <div class="mini-section">
+                    <div class="mini-section__title">
+                        <h2 class="mini-section__header">My awsome<br><span class="mini-section__sub-heading">services</span></h2>
+                    </div>
+                    <div class="mini-section__content">
+                        <p class="mini-section__pragraph">ReactJS, Redux, NodeJS, Database, MongoDB, GIT, JavaScript, HTML, CSS</p>
+                        <button class="btn btn--primary">Download CV</button>
+                    </div>
+                </div>
+
+                <div class="service margin-md">
+                    <i class="service__icon fab fa-js-square"></i>
+                    <div class="serviec-content">
+                        <h3 class="service__heading"> Front-end Developer</h3>
+                        <p class="service__paragraph">Javascript/ReactJS</p>
+                    </div>
+                    <button class="btn btn--small btn--secondary">Lean More</button>
+                </div>
+
+                <div class="service margin-md">
+                   <i class="service__icon fab fa-node"></i>
+                    <div class="serviec-content">
+                        <h3 class="service__heading"> Back-end Developer</h3>
+                        <p class="service__paragraph">NodeJS/MongoDB</p>
+                    </div>
+                    <button class="btn btn--small btn--secondary">Lean More</button>
+                </div>
+            </article>
+
+           
+            <article id="galery" class="galery margin-top-xxl">
+                <p class="galery__paragraph">This is the projects <span class="galery__sub-paragraph">MERM Full stack</span></p>
+                <div class="galery__carousel">
+                    <ul class="galery-list">
+                        <li class="galery-list__item"><img src="images/SocialNetwork-App.jpg"></li>
+                        <li class="galery-list__item"><img src="images/Ecommerce-App-image.jpg"></li>
+                        <li class="galery-list__item"><img src="images/DropDown-btn.jpg"></li>
+                        <li class="galery-list__item"><img src="images/SocialNetwork-App.jpg"></li>
+                        <li class="galery-list__item"><img src="images/Ecommerce-App-image.jpg"></li>
+                    </ul>
+                    <button class="btn  btn--slider btn--slider-prev">Prev</button>
+                    <button class="btn btn--slider btn--slider-next">Next</button>
+                </div>
+            </article>
+        
+
+            <article class="technologies services margin-top-xxl">
+                <div class="mini-section">
+                    <div class="mini-section__title">
+                        <h2 class="mini-section__header">Work For All This<br><span class="mini-section__sub-heading">Brands</span></h2>
+                    </div>
+                    <div class="mini-section__content">
+                        <p class="mini-section__pragraph">ReactJS, Redux, NodeJS, Database, MongoDB, GIT, JavaScript, HTML, CSS</p>
+                    </div>
+                </div>
+                <div class="technologies__circle">
+                    <div class= "technologies__background technologies__background--blue"></div>
+                    <div class=" technologies__background technologies__background--orange"></div>
+                    <div class="technologies-background__circle1"></div>
+                    <div class="technologies-background__circle2"></div>
+                    <div class="technologies-background__circle3"></div>
+                    <ul class="technologies__list">
+                        <li class="list__item">
+                            <img class="item__img item__react" src="images/react.jpg" alt="react icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/express.jpg" alt="express icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/nodeJS.jpg" alt="nodeJS icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/redux.jpg" alt="redux icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/mongoDb.jpg" alt="mongoDb icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/JS.jpg" alt="JavaScript icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/HTML.jpg" alt="HTML icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/CSS.jpg" alt="CSS icon"/>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>

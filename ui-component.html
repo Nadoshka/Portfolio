@@ -6,17 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/7f370db103.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link href="./style.css" rel="stylesheet">  
 </head>
 <body> 
-    <h1 class="header-title">Portfolio</h1>
+    <nav class="navigation-bar">
+        <div class="menu">
+            <input type="checkbox" id="checkbox-menu" class="menu__checkbox">
+            <label for="checkbox-menu" class="menu__label">
+                <div class="menu__btn">
+                    <div class="menu__burger"></div>
+                </div>
+            </label>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#">Home</a></li>
+                <li class="menu__item"><a href="#">About</a></li>
+                <li class="menu__item"><a href="#">Services</a></li>
+            </ul>
+        </div>
+          <button class="btn btn--primary">Contact us</button>
+    </nav>
+
     <div class="container"> 
         <div class="example">
             <h2 class="example__header">Buttons</h2>   
             <div class="example__body">
                 <button class="btn btn--primary">Contact us</button>
                 <button class="btn btn--secondary">LEARN MORE</button>
-                <button class="btn btn--slider">Prev</button>
+                <button class="btn  btn--slider btn--slider-prev">Prev</button>
+                <button class="btn btn--slider btn--slider-next">Next</button>
             </div>
         </div>
 
@@ -38,8 +56,10 @@
             <div class="example__body">
                 <article class="service">
                     <i class="service__icon fab fa-node-js"></i>
-                    <h3 class="service__heading"> Front-end Developer</h3>
-                    <p class="service__paragraph">Javascript/ReactJS</p>
+                    <div class="serviec-content">
+                        <h3 class="service__heading"> Front-end Developer</h3>
+                        <p class="service__paragraph">Javascript/ReactJS</p>
+                    </div>
                     <button class="btn btn--small btn--secondary">Lean More</button>
                 </article>
             </div>
@@ -49,14 +69,80 @@
             <div class="example__body">
                 <article class="mini-section">
                     <div class="mini-section__title">
-                        <h2 class="mini-section__header">My awsome</h2>
-                        <h2 class="mini-section__sub-heading">Services</h2>
+                        <h2 class="mini-section__header">My awsome<br><span class="mini-section__sub-heading">services</span></h2>
                     </div>
                     <div class="mini-section__content">
                         <p class="mini-section__pragraph">ReactJS, Redux, NodeJS, Database, MongoDB, GIT, JavaScript, HTML, CSS</p>
                         <button class="btn btn--primary">Download CV</button>
                     </div>
                 </article>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example__body">
+                <div class="profile-container">
+                    <img class="profile-container__image" src="images/nadin.jpg"/>
+                    <div class="profile-container__background"></div>
+                    <div class="profile-container__icon"></div>
+                    <div class="profile-container__icon  profile-container__icon--left"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="example">
+            <div class="example__body">
+                <div class="galery">
+                    <p class="galery__paragraph">This is the projects <div class="galery__sub-paragraph">MERM Full stack</div></p>
+                    <div class="galery__carousel">
+                        <ul class="galery-list">
+                            <li class="galery-list__item"><img src="images/SocialNetwork-App.jpg"></li>
+                            <li class="galery-list__item"><img src="images/Ecommerce-App-image.jpg"></li>
+                            <li class="galery-list__item"><img src="images/DropDown-btn.jpg"></li>
+                            <li class="galery-list__item"><img src="images/SocialNetwork-App.jpg"></li>
+                            <li class="galery-list__item"><img src="images/Ecommerce-App-image.jpg"></li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="example">
+            <div class="example__body">
+                <div class="technologies">
+                    <div class= "technologies__background technologies__background--blue"></div>
+                    <div class=" technologies__background technologies__background--orange"></div>
+                    <div class="technologies-background__circle1"></div>
+                    <div class="technologies-background__circle2"></div>
+                    <div class="technologies-background__circle3"></div>
+                    <ul class="technologies__list">
+                        <li class="list__item">
+                            <img class="item__img item__react" src="images/react.jpg" alt="react icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/express.jpg" alt="express icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/nodeJS.jpg" alt="nodeJS icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/redux.jpg" alt="redux icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/mongoDb.jpg" alt="mongoDb icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/JS.jpg" alt="JavaScript icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/HTML.jpg" alt="HTML icon"/>
+                        </li>
+                        <li class="list__item">
+                            <img class="item__img" src="images/CSS.jpg" alt="CSS icon"/>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
